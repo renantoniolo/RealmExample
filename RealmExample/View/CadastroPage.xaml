@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RealmExample.View.CadastroPage">
+    <ContentPage.Content>
+        
+         <StackLayout 
+            Margin="20">
+            
+            <Label 
+               Text="Cadastro Usuário" 
+               TextColor="Gray"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="FillAndExpand"/>
+            
+            <Entry 
+               x:Name="xNome" 
+               Placeholder="Nome" 
+               Keyboard="Default" 
+               HorizontalOptions="FillAndExpand" />
+            
+            <Entry 
+                x:Name="xEmail" 
+                Placeholder="Email" 
+                Keyboard="Email"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Slider 
+                x:Name="xAge"
+                Maximum="90" 
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button 
+                Text="Salvar" 
+                TextColor="Black" 
+                BackgroundColor="Gray" 
+                HorizontalOptions="FillAndExpand"
+                Clicked="Handle_Clicked"/>
+            
+            <Button 
+                Text="Voltar" 
+                TextColor="Black" 
+                BackgroundColor="Gray" 
+                HorizontalOptions="FillAndExpand"
+                Clicked="Handle_Clicked_1"/>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
